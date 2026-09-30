@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic",
+    Meiryo, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+
+/* 見出しは文節の途中で改行しない（対応ブラウザのみ。非対応でも通常の改行になるだけ） */
+h1,
+h2,
+h3,
+.phrase-wrap {
+  word-break: auto-phrase;
+}
